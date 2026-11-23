@@ -1,0 +1,11 @@
+{
+  "name": "alteryx",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,magenta \"npm run dev --prefix server\" \"npm run dev --prefix web\"",
+    "start": "concurrently -n api,web -c blue,magenta \"npm start --prefix server\" \"npm start --prefix web\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
