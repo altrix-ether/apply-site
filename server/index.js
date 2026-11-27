@@ -168,8 +168,8 @@ app.post("/api/applications", (req, res) => {
   });
 });
 
-const port = Number(process.env.PORT) || 4000;
-app.listen(port, () => {
+const port = Number(process.env.API_PORT) || 4000;
+app.listen(port, "127.0.0.1", () => {
   console.log(`Alteryx api listening on http://127.0.0.1:${port}`);
   console.log(`SQLite database ${dbFile}`);
 });
